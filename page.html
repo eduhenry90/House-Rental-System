@@ -1,8 +1,35 @@
 <!doctype html>
 <html lang="en">
   <head>
+        <script src="./js/jquery.js"></script>
     <script>
-        $(document).ready(function(){
+        
+    $(document).ready(function(){
+        
+        $(function(){
+            var object = [{
+                id: 1,
+                firstname: "Gandalf",
+                lastname: "Greyhaem",
+            },
+            {
+                id: 2,
+                firstname: "Bilbo",
+                lastname: "Baggins",
+            },
+            {
+                id: 3,
+                firstname: "Frodo",
+                lastname: "Baggins",
+            }];
             
-        })
-        </script>
+            
+            $.each(object, function() {
+                console.log("ID: " + this.id);
+                console.log("First Name: " + this.firstname);
+                console.log("Last Name: " + this.lastname);
+                console.log(" ");
+            });;
+        });
+    });
+     </script>
