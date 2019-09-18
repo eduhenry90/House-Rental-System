@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "fullname": "Chinedu",
+      "email": "chinedu@yahoo.com",
+      "phone": "",
+      "id": 1
+    },
+    {
+      "fullname": "Chinedu",
+      "email": "chinedu@yahooyy.com",
+      "phone": "9070969859",
+      "id": 2
+    }
+  ],
+  "buildings": [],
+  "addresses": []
+}
