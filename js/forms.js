@@ -27,7 +27,7 @@ $(document).ready(function() {
     //Make get request to check if the user already exist
     $.ajax({
       method: 'GET',
-      url: `http://localhost:3000/users?email=${email}`,
+      url: `http://localhost:3000/user?email=${email}`,
       data: {
         email,
       },
@@ -41,7 +41,7 @@ $(document).ready(function() {
           //Submit the user data if the user does not exist
           $.ajax({
             method: 'POST',
-            url: 'http://localhost:3000/users',
+            url: 'http://localhost:3000/user',
             data: {
               fullname,
               username,

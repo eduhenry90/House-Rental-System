@@ -13,6 +13,7 @@ $(document).ready(function() {
     //   $('.loginForm').fadeOut();
     // });
     // //Registration Function
+
     $('.regForm').submit(function(event) {
       event.preventDefault();
       const fullname = $('#FullName').val();
@@ -74,6 +75,7 @@ $(document).ready(function() {
     });
     //Login Function
     $('.loginForm').click(function(event) {
+
       event.preventDefault();
       const passwordLogin = $('#passwordLogin').val();
       const emailLogin = $('#emailLogin').val();

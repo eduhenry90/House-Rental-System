@@ -7,20 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="./js/form1.js"></script>
     <title>PackIn Properties Limited</title>
 </head>
 <a class="navbar-brand" href="/Index.html"><h1>PackIn Properties</h1></a>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/Index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler regSubmitBtn" id= type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/register.html">Register <span class="sr-only">(current)</span></a>
+                    <a class="nav-link registerBtn" href="/register.html">Register <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/login.html">Login</a>
@@ -37,14 +39,12 @@
                 <li class="nav-item">
                         <a class="nav-link" href="#">Logout</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
             </ul>
         </div>
     </nav>
     <main class="main-content">
         <p class="regMessage"></p>
+
         <form class="regForm" action="" method="POST">
             <div class="form-group">
                 <div class="form-group">
@@ -53,11 +53,13 @@
                 </div>
                 <label for="Email">Email address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+
                     placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
             <div class="form-group">
+
                 <label for="PhoneNumber">Phone Number</label>
                 <input type="Phone" class="form-control" id="PhoneNumber" placeholder="08012345678">
             </div>
@@ -67,6 +69,7 @@
             </div>
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="Check">
+
                 <label class="form-check-label" for="exampleCheck1">Tick this box</label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -74,8 +77,10 @@
     </main>
     
     <footer>Copyright 2019 &copy; PackIn Properties Limited</footer>
+
     <script src="./js/jquery.js"></script>
     <script src="./js/Form1.js"></script>
+
 
 </body>
 
