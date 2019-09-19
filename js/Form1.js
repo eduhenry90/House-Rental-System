@@ -13,14 +13,14 @@ $(document).ready(function() {
     //   $('.loginForm').fadeOut();
     // });
     // //Registration Function
-    $('.login').submit(function(event) {
+
+    $('.regForm').submit(function(event) {
       event.preventDefault();
       const fullname = $('#FullName').val();
-    //   const username = $('#InputEmail1').val();
-      const phone = $('#InputPhoneNumber').val();
-      const email = $('#InputEmail1').val();
-      const password = $('#InputPassword1').val();
-      const check = $('#Check1').val();
+      const phone = $('#PhoneNumber').val();
+      const email = $('#email').val();
+      const password = $('#Password').val();
+      const check = $('#Check').val();
       var form = $(this);
       //Check if user input is empty
       if (!fullname || !email || !password || !phone || !check) {
@@ -74,7 +74,8 @@ $(document).ready(function() {
       });
     });
     //Login Function
-    $('.loginSubmitBtn').click(function(event) {
+    $('.loginForm').click(function(event) {
+
       event.preventDefault();
       const passwordLogin = $('#passwordLogin').val();
       const emailLogin = $('#emailLogin').val();
